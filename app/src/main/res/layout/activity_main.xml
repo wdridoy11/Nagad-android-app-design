@@ -9,13 +9,69 @@
     android:background="#FAFAFA"
     >
 
-    <LinearLayout
+
+    
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="15dp"
         >
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <!--==========    Nagad cover     ========== -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:background="@drawable/cover"
+                android:padding="10dp"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/nagad_logo"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="20dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/nagad_balance"
+                    android:padding="10dp"
+                    android:weightSum="2"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/home"
+                        android:layout_marginRight="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tap for Balance"
+                        android:textStyle="bold"
+                        android:textColor="#EC1C24"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        <!--==========    Services heading    ========== -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,6 +80,7 @@
             android:textColor="#6E6E6E"
             android:layout_marginBottom="14dp"
             android:layout_marginLeft="8dp"
+            android:paddingHorizontal="15dp"
             android:textSize="25sp"
             />
 
@@ -32,6 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:paddingHorizontal="15dp"
             android:weightSum="4"
         >
             <!--==========    Services items    ========== -->
@@ -41,15 +99,16 @@
                 android:orientation="vertical"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:layout_marginHorizontal="5dp"
                 >
 
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/send_money"
                     android:background="@drawable/nagad_button"
                     android:paddingHorizontal="10dp"
-                    android:paddingVertical="15dp"
+                    android:paddingVertical="20dp"
                     />
 
                 <TextView
@@ -71,15 +130,16 @@
                 android:orientation="vertical"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:layout_marginHorizontal="5dp"
                 >
 
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/cash_out"
                     android:background="@drawable/nagad_button"
                     android:paddingHorizontal="10dp"
-                    android:paddingVertical="15dp"
+                    android:paddingVertical="20dp"
                     />
 
                 <TextView
@@ -101,15 +161,16 @@
                 android:orientation="vertical"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:layout_marginHorizontal="5dp"
                 >
 
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/mobile_recharge"
                     android:background="@drawable/nagad_button"
                     android:paddingHorizontal="10dp"
-                    android:paddingVertical="15dp"
+                    android:paddingVertical="20dp"
                     />
 
                 <TextView
@@ -131,15 +192,16 @@
                 android:orientation="vertical"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:layout_marginHorizontal="5dp"
                 >
 
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/add_money"
                     android:background="@drawable/nagad_button"
                     android:paddingHorizontal="10dp"
-                    android:paddingVertical="15dp"
+                    android:paddingVertical="23dp"
                     />
 
                 <TextView
@@ -163,6 +225,7 @@
             android:orientation="horizontal"
             android:weightSum="4"
             android:layout_marginTop="15dp"
+            android:paddingHorizontal="15dp"
             >
             <!--==========    Services items    ========== -->
             <LinearLayout
@@ -171,15 +234,16 @@
                 android:orientation="vertical"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:layout_marginHorizontal="5dp"
                 >
 
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/transfer_money"
                     android:background="@drawable/nagad_button"
                     android:paddingHorizontal="10dp"
-                    android:paddingVertical="15dp"
+                    android:paddingVertical="20dp"
                     />
 
                 <TextView
@@ -201,15 +265,16 @@
                 android:orientation="vertical"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:layout_marginHorizontal="5dp"
                 >
 
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/insurance"
                     android:background="@drawable/nagad_button"
                     android:paddingHorizontal="10dp"
-                    android:paddingVertical="15dp"
+                    android:paddingVertical="20dp"
                     />
 
                 <TextView
@@ -231,11 +296,12 @@
                 android:orientation="vertical"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:layout_marginHorizontal="5dp"
                 >
 
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/nagad_mela"
                     android:background="@drawable/nagad_button"
                     android:paddingHorizontal="10dp"
@@ -258,6 +324,7 @@
 
         </LinearLayout>
 
+        <!--==========    payment heading    ========== -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -268,6 +335,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="8dp"
             android:textSize="25sp"
+            android:paddingHorizontal="15dp"
             />
 
         <LinearLayout
@@ -276,6 +344,7 @@
             android:orientation="horizontal"
             android:weightSum="4"
             android:layout_marginTop="15dp"
+            android:paddingHorizontal="15dp"
             >
             <!--==========    Services items    ========== -->
             <LinearLayout
@@ -284,15 +353,16 @@
                 android:orientation="vertical"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:layout_marginHorizontal="5dp"
                 >
 
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/merchant_pay"
                     android:background="@drawable/nagad_button"
                     android:paddingHorizontal="10dp"
-                    android:paddingVertical="15dp"
+                    android:paddingVertical="20dp"
                     />
 
                 <TextView
@@ -314,11 +384,12 @@
                 android:orientation="vertical"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:layout_marginHorizontal="5dp"
                 >
 
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/bill_pay"
                     android:background="@drawable/nagad_button"
                     android:paddingHorizontal="10dp"
@@ -344,15 +415,16 @@
                 android:orientation="vertical"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:layout_marginHorizontal="5dp"
                 >
 
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/emi_payment"
                     android:background="@drawable/nagad_button"
                     android:paddingHorizontal="10dp"
-                    android:paddingVertical="15dp"
+                    android:paddingVertical="20dp"
                     />
 
                 <TextView
@@ -374,15 +446,16 @@
                 android:orientation="vertical"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:layout_marginHorizontal="5dp"
                 >
 
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/donation"
                     android:background="@drawable/nagad_button"
                     android:paddingHorizontal="10dp"
-                    android:paddingVertical="15dp"
+                    android:paddingVertical="20dp"
                     />
 
                 <TextView
@@ -398,11 +471,252 @@
 
             </LinearLayout>
 
+        </LinearLayout>
+
+        <!--==========    slider   ========== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="15dp"
+            android:paddingHorizontal="15dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/slider"
+                />
 
         </LinearLayout>
 
-    </LinearLayout>
+        <!--==========    Others heading    ========== -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:textStyle="bold"
+            android:textColor="#6E6E6E"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="25sp"
+            android:paddingHorizontal="15dp"
+            />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="15dp"
+            >
+            <!--==========    Services items    ========== -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginHorizontal="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/contact"
+                    android:background="@drawable/nagad_button"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Us"
+                    android:textStyle="normal"
+                    android:textColor="#6E6E6E"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginHorizontal="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/run"
+                    android:background="@drawable/nagad_button"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="18dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10 Taka Run"
+                    android:textStyle="normal"
+                    android:textColor="#6E6E6E"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginHorizontal="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/calculator"
+                    android:background="@drawable/nagad_button"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="22dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zakat Calculator"
+                    android:textStyle="normal"
+                    android:textColor="#6E6E6E"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginHorizontal="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/charges"
+                    android:background="@drawable/nagad_button"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="22dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Limits and Charges"
+                    android:textStyle="normal"
+                    android:textColor="#6E6E6E"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="80dp"
+            android:paddingHorizontal="15dp"
+            >
+            <!--==========    Services items    ========== -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginHorizontal="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/surokkha"
+                    android:background="@drawable/nagad_button"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="24dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Surokkha"
+                    android:textStyle="normal"
+                    android:textColor="#6E6E6E"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginHorizontal="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/quiz"
+                    android:background="@drawable/nagad_button"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="T20 Quiz"
+                    android:textStyle="normal"
+                    android:textColor="#6E6E6E"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
     <!--==========    Footer Menu    ========== -->
     <LinearLayout
         android:layout_width="match_parent"
